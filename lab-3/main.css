@@ -4,3 +4,7 @@ div {
     justify-content: space-between;
     
 }
+
+label {
+    font-weight: bold;
+}
