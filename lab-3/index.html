@@ -1,40 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CST8117 - Lab 3</title>
-    <link rel="stylesheet" href="main.css">
-</head>
-<body>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
     <header>
-        <h1>My Cats</h1>
+      <h1>Cats World</h1>
     </header>
     <main>
-        <a href="catImage.jpeg"><img src="catImage.jpeg" alt="Cat picture" width="150" height="150"></a>
+      <a href="catImage.jpeg"
+        ><img src="catImage.jpeg" alt="Cat picture" width="150" height="150"
+      /></a>
 
-        <form action="" method="post">
-            <div>
-                <label for="fullname">Your Name:</label>
-                <input id= "fullname" type="text" name="userName"  placeholder="Type here..">
-            </div>
-            <div>
-                <label for="email">E-mail Adress:</label>
-                <input type="email" id="email"  name="userEmail" placeholder= "Enter your e-mail here..">
-            </div>
-            <div>
-                <label for="caption">Caption:</label>
-                <textarea name="userCaptions" id="caption" cols="18" rows="8" placeholder="Enter your text here.."></textarea>
-            </div>
-            <div>
-                <button type="button" >Send</button>
-            </div>
-        </form>
-    
+      <form action="submission.html" method="get">
+        <div>
+          <label for="fullname">Your Name:</label>
+          <input
+            id="fullname"
+            type="text"
+            name="userName"
+            placeholder="Type here.."
+          />
+        </div>
+        <div>
+          <label for="email">E-mail Adress:</label>
+          <input
+            type="email"
+            id="email"
+            name="userEmail"
+            placeholder="Enter your e-mail here.."
+          />
+        </div>
+        <div>
+          <label for="caption">Caption:</label>
+          <textarea
+            name="userCaptions"
+            id="caption"
+            cols="18"
+            rows="8"
+            placeholder="Enter your text here.."
+          ></textarea>
+        </div>
+        <div>
+          <button type="submit">Send</button>
+        </div>
+      </form>
     </main>
     <footer>
-        <p><em>© 2023 M. Said Altan</em></p>
+      <p><em>© 2023 M. Said Altan</em></p>
     </footer>
-    
-</body>
+  </body>
 </html>
