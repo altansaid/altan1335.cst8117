@@ -1,0 +1,32 @@
+/* I used div because it was easy to work with it*/
+div {
+  background-color: #006341;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  width: 300px;
+  margin: auto;
+  /* I found text-align and padding from w3Shchools.com */
+  text-align: center;
+  padding: 30px;
+}
+
+h3 {
+  font-family: "Figtree", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+p {
+  font-family: "Figtree", sans-serif;
+  color: #fff;
+  font-size: 25px;
+}
+
+/* to remove underline and color from link Algonquin college */
+/* https://stackoverflow.com/questions/6722467/how-do-i-remove-the-default-link-color-of-the-html-hyperlink-a-tag */
+a {
+  text-decoration: none;
+  color: #fff;
+}
