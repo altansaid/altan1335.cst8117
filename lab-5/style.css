@@ -1,0 +1,55 @@
+.square {
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+}
+
+.square-large {
+  position: relative;
+  height: 300px;
+  width: 300px;
+  display: inline-block;
+  margin: 10px;
+}
+
+.red {
+  background-color: crimson;
+}
+
+.blue {
+  background-color: cornflowerblue;
+}
+
+.green {
+  background-color: darkseagreen;
+}
+
+.blue-outline {
+  border: 1rem solid cornflowerblue;
+}
+.red-outline {
+  border: 1rem solid crimson;
+}
+
+.green-outline {
+  border: 1rem solid darkseagreen;
+}
+.align-center {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.align-bottom-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
+.overflow {
+  overflow: hidden;
+}
