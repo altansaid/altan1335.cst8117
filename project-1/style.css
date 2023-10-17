@@ -1,0 +1,146 @@
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Quicksand', sans-serif; */
+/* font-family: 'Lilita One', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Open+Sans:ital,wght@0,500;0,700;1,400&family=Quicksand:wght@400;500;700&display=swap');
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	background-color: #f0f0f0;
+	font-family: 'Lilita One', sans-serif;
+}
+
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+header {
+	text-align: center;
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+}
+
+header h1 {
+	font-size: 36px;
+}
+
+h2 {
+	font-size: 24px;
+	margin-top: 20px;
+}
+
+section {
+	background-color: #f0f0f0;
+	padding: 20px;
+	margin: 20px 0;
+}
+
+#logos {
+	text-align: center;
+}
+
+.logo-container {
+	display: flex;
+	justify-content: center;
+}
+
+.logo {
+	width: 200px;
+
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+#colors {
+	display: flex;
+	flex-direction: column;
+}
+
+.color {
+	padding: 10px;
+	margin: 10px 0;
+	border: 1px solid #ddd;
+	text-align: center;
+}
+
+.colorbox {
+	font-weight: bold;
+}
+
+.tomato {
+	background-color: #ff4b3e;
+}
+
+.selective-yellow {
+	background-color: #ffb20f;
+}
+
+.brown {
+	background-color: #972d07;
+}
+
+#typography {
+	display: flex;
+	flex-direction: column;
+}
+
+.font-container {
+	padding: 20px;
+	border: 1px solid #ddd;
+	margin: 20px 0;
+}
+
+.open-sans {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.quicksand {
+	font-family: 'Quicksand', sans-serif;
+}
+#components {
+	display: flex;
+	flex-direction: column;
+}
+
+.component-container {
+	margin: 20px 0;
+}
+
+.button {
+	padding: 10px 20px;
+	background-color: #007bff;
+	color: #fff;
+	text-decoration: none;
+	border: none;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+
+ul {
+	list-style: disc;
+	padding-left: 20px;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+table,
+th,
+td {
+	border: 1px solid #ddd;
+}
+
+th,
+td {
+	padding: 10px;
+	text-align: left;
+}
