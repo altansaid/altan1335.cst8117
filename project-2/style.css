@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #f7f7ff;
+
+	font-family: 'Montserrat', sans-serif;
+	height: 100vh;
+	max-width: 1920px;
+	min-width: 400px;
+	display: grid;
+	grid-template-areas:
+		'header'
+		'main'
+		'footer';
+	grid-template-rows: 80px auto 150px;
+}
+
+header {
+	grid-area: header;
+	padding: 20px 100px;
+	height: 150px;
+	width: 100%;
+	display: flex;
+}
+
+#logo {
+	height: 100px;
+	width: 100px;
+}
+/* ************************************************** */
+.main {
+	background-image: url('/landing-page-main/images/bg-image/scooter.svg');
+	background-repeat: no-repeat;
+	background-size: 45%;
+	background-position: center;
+	grid-area: main;
+	display: flex;
+	flex-direction: row;
+	padding: 0 100px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.main-left {
+	max-width: 400px;
+	margin-bottom: 150px;
+}
+
+#main-text {
+	font-size: 64px;
+}
+
+.registerForm {
+	background-color: #fff;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+	display: flex;
+	flex-direction: column;
+	text-align: start;
+	min-width: 100px;
+
+	max-width: 500px;
+	border-radius: 20px;
+	padding: 20px 40px;
+}
+
+.registerForm h1 {
+	width: 100%;
+	padding: 10px 0;
+	margin: 0px 0px 5px 0;
+}
+#explanation {
+	width: 100%;
+	padding: 0px;
+	margin: 0px 0px 5px 0;
+	font-size: 18px;
+}
+
+.registerForm p:nth-of-type(2) {
+	font-size: 12px;
+	padding: 10px;
+	margin: 0px 0px 5px 0;
+}
+
+.registerForm input {
+	background-color: #f7f7ff;
+	border-radius: 10px;
+	width: 100%;
+	padding: 13px;
+	margin: 5px 0;
+	border: none;
+	outline: none;
+}
+
+.registerForm div {
+	width: 100%;
+	padding: 5px;
+}
+
+.checkboxContainer {
+	display: grid;
+	grid-template-columns: auto auto;
+	justify-content: flex-start;
+	gap: 10px;
+	padding: 0;
+}
+
+.registerBtn {
+	background-color: #57eeab;
+	color: #333131;
+	border: none;
+	border-radius: 10px;
+	font-weight: 700;
+	cursor: pointer;
+	width: 100%;
+	padding: 5px;
+	margin: 0px 0px 5px 0;
+	font-size: 25px;
+}
+
+/* ************************************************** */
+.footer {
+	background-color: #fffd8c;
+	grid-area: footer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 100px;
+}
+
+.footer-left form {
+	display: flex;
+	flex-direction: column;
+}
+
+.footer-right {
+	min-width: 300px;
+}
+
+.icons img {
+	margin-left: 40px;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+}
+
+.form {
+	display: grid;
+	grid-template-columns: 100px 200px 150px;
+	column-gap: 10px;
+	max-width: 500px;
+}
+
+.calculateForm h3 {
+	margin-bottom: 10px;
+}
+
+.form input {
+	background: #f7f7ff;
+	border: none;
+	border-radius: 10px;
+	padding: 5px;
+	margin: 10px 0px 5px 0;
+}
+
+.calculateBtn {
+	background: #ff8480;
+	font-weight: 600;
+	font-size: 18px;
+	color: #fff;
+	border: none;
+	border-radius: 10px;
+	padding: 5px;
+	margin: 10px 0px 5px 0;
+	width: 100%;
+	cursor: pointer;
+}
+
+@media (max-width: 960px) {
+	body {
+		grid-template-rows: 80px auto auto;
+	}
+
+	header {
+		flex-direction: column;
+		align-items: start;
+		justify-content: flex-start;
+		padding: 0 50px;
+	}
+
+	.main {
+		background-size: 70%;
+		flex-direction: column;
+		padding: 0;
+		margin: 50px 0;
+	}
+
+	.main-right {
+		margin-top: 100px;
+	}
+
+	.footer {
+		flex-direction: column;
+		justify-content: center;
+		padding: 10px 20px;
+	}
+
+	.footer-right {
+		margin-top: 10px;
+	}
+}
+
+@media (max-width: 500px) {
+	body {
+		grid-template-rows: 80px auto auto;
+	}
+
+	header {
+		padding: 10px 20px;
+	}
+
+	#secondary-text {
+		font-size: 20px;
+	}
+
+	.main {
+		padding: 50px 20px;
+	}
+
+	.registerForm {
+		padding: 20px 20px;
+	}
+
+	.footer {
+		justify-content: center;
+	}
+
+	.form {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.form input {
+		padding: 10px;
+	}
+
+	.form .hour {
+		width: 20%;
+	}
+
+	.form .city {
+		width: 75%;
+	}
+
+	.calculateBtn {
+		padding: 10px;
+	}
+
+	.icons img {
+		padding: 0px;
+		width: 40px;
+		height: 40px;
+		margin: 5px 20px;
+	}
+
+	.footer-right {
+		margin-right: 0;
+		display: flex;
+		justify-content: space-around;
+		margin: 5px 5px;
+	}
+}
